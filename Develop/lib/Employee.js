@@ -6,14 +6,17 @@ class Employee {
         this.id = id;
         this.email = email;
     }
-    employeeName() {
+    getName() {
         return this.name;
     }
-    employeeId() {
+    getId() {
         return this.id;
     }
-    employeeEmail() {
+    getEmail() {
         return this.email;
+    }
+    getRole() {
+        return "Employee";
     }
 }
 
