@@ -13,6 +13,10 @@ const render = require("./lib/htmlRenderer");
 const questions = [
 
     {
+        message: "Enter team member's name",
+        name: "name"
+    },
+    {
         type: "list",
         message: "What is your role?",
         name: "role",
@@ -32,17 +36,19 @@ const questions = [
     },
     {
         message: "Please enter your school",
-        name: "school"
+        name: "school",
+        when: (answers) => answers.role === "Intern"
     },
     {
         message: "Please enter your GitHub username.",
-        name: "username"
+        name: "username",
+        when: (answers) => answers.role === "Engineer"
     },
     {
         message: "Please enter your officeNumber.",
-        name: "office"
+        name: "office",
+        when: (answers) => answers.role === "Manager"
     }
-
 ];
 
 function init() {
