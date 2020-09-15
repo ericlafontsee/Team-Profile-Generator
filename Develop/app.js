@@ -101,9 +101,12 @@ function init() {
 
     }).then(() => {
         console.log(render(teamMembers));
-        fs.writeFile //render goes in here. It's already converted for me
+        fs.writeFile("output/team.html", render(teamMembers), function(err) {
+            if (err) throw err;
+            console.log('Updated!');
 
-    });
-}
+        });
+    })
+};
 
 init();
