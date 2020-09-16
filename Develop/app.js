@@ -15,14 +15,14 @@ const questions = [
     {
         type: "list",
         name: "startApp",
-        message: "Would you like to add an employee to your team?",
+        message: "Would you like to add an employee to your team?:",
         choices: ["Yes", "No"],
         default: "No"
     },
 
     {
         type: "list",
-        message: "What is your role?",
+        message: "What is the employee's role?:",
         name: "role",
         choices: [
             "Manager",
@@ -33,32 +33,32 @@ const questions = [
         when: (answers) => answers.startApp === "Yes"
     },
     {
-        message: "What is your employee\'s name",
+        message: "What is the employee\'s name?:",
         name: "name",
         when: (answers) => answers.startApp === "Yes"
     },
     {
-        message: "Please enter your id",
+        message: "Please enter the employee\'s id:",
         name: "id",
         when: (answers) => answers.startApp === "Yes"
     },
     {
-        message: "Please enter your email",
+        message: "Please enter the employee\'s email:",
         name: "email",
         when: (answers) => answers.startApp === "Yes"
     },
     {
-        message: "Please enter your school",
+        message: "Please the employee\'s school:",
         name: "school",
         when: (answers) => answers.role === "Intern"
     },
     {
-        message: "Please enter your GitHub username.",
+        message: "Please enter the employee\'s GitHub username:",
         name: "github",
         when: (answers) => answers.role === "Engineer"
     },
     {
-        message: "Please enter your office number.",
+        message: "Please enter the employee\'s office number:",
         name: "officeNumber",
         when: (answers) => answers.role === "Manager"
     }
