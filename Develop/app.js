@@ -67,7 +67,7 @@ const teamMembers = [];
 
 function init() {
     inquirer.prompt(questions).then(answers => {
-        console.log(answers);
+
         if (answers.startApp === "No") {
             return;
         } else if (answers.role === "Intern") {
@@ -89,10 +89,9 @@ function init() {
         init();
 
     }).then(() => {
-        console.log(render(teamMembers));
+
         fs.writeFile("output/team.html", render(teamMembers), function(err) {
             if (err) throw err;
-            console.log('Updated!');
 
         });
     })
