@@ -71,28 +71,17 @@ function init() {
         if (answers.startApp === "No") {
             return;
         } else if (answers.role === "Intern") {
-            name = answers.name;
-            id = answers.id;
-            email = answers.email;
-            school = answers.school;
+            let { name, id, email, school } = answers;
             const employee = new Intern(name, id, email, school);
             teamMembers.push(employee);
 
         } else if (answers.role === "Engineer") {
-            // githubLink = Engineer.getUserName(answers.github);
-            // console.log(githubLink);
-            name = answers.name;
-            id = answers.id;
-            email = answers.email;
-            github = answers.github;
+            let { name, id, email, github } = answers;
             const employee = new Engineer(name, id, email, github);
             teamMembers.push(employee);
 
         } else if (answers.role === "Manager") {
-            name = answers.name;
-            id = answers.id;
-            email = answers.email;
-            officeNumber = answers.officeNumber;
+            let { name, id, email, officeNumber } = answers;
             const employee = new Manager(name, id, email, officeNumber);
             teamMembers.push(employee);
         }

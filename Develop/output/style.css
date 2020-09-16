@@ -1,0 +1,21 @@
+.container-fluid {
+    margin: 0 auto;
+}
+
+.jumbotron {
+    background: #556270;
+}
+
+.card-header {
+    background: #4ECDC4;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+}
+
+.card {
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 #556270;
+}
