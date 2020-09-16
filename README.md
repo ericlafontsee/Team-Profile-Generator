@@ -5,11 +5,11 @@ For this project, I built a Team Profile Generator command-line application. Whe
 it will prompt the user to enter information about their team members. There are three types of roles to choose from:  
 Manager, Engineer, and Intern. The user can enter as many members as they prefer. Once the user selects the role of the employee, they will be prompted with standard questions followed by specific questions pertaining to that role. Once all  
 of the team members have been entered, the application will create an HTML file that displays a team roster. This project  
-focused on using the jest module to test the code and using classes.
-View a full live demo of this application here: 
+focused on using the jest module to test the code and using classes.  
+View a full live demo of this application here: https://drive.google.com/file/d/1FAkVv5czBKA5EqCrOKxXFto6FAjKJssY/view
 
 ## Usage
-
+Quick Demo:
 ![Team-Profile-Generator-DEMO](Team-Profile-Generator-DEMO.gif)
 
 
