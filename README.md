@@ -14,12 +14,12 @@ Quick Demo:
 
 
 ## Built With
-Node.js
-JavaScript
-BootStrap
-HTML
-CSS
-Font Awesome
+Node.js  
+JavaScript  
+BootStrap  
+HTML  
+CSS  
+Font Awesome  
 
 
 ## Prerequisites
